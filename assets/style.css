@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    /* default olaraq flex-direction  */
+    flex-direction: column;
+    /* justify content :center*/
+    justify-content: center;
+
+
+}
+
+.container{
+   background-color: rgb(107, 107, 253);
+   height: 100vh;
+
+}
+/* descendant selector */
+header.header{
+    background-color: plum;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+header>nav{
+    background-color: rgb(30, 70, 139);
+    /* flex basis hemise item,yeni usaga verilir  */
+    flex-basis: 70%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color:white;
+}
+
+header>.logo{
+    margin-left: 7px;
+    background: white;
+    
+}
+header>button{
+    padding: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
